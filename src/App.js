@@ -6,7 +6,7 @@ const App = () => {
   const { isLatestVersion, emptyCacheStorage } = useClearCache();
   return (
     <div>
-      <h1>React cache</h1>
+      <h1>React cache update</h1>
       {!isLatestVersion && (
         <p>
           <a
