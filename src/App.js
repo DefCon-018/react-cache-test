@@ -4,9 +4,11 @@ import { useClearCache } from "react-clear-cache";
 
 const App = () => {
   const { isLatestVersion, emptyCacheStorage } = useClearCache();
+  console.log("islatestversion", isLatestVersion);
+  console.log("empty", emptyCacheStorage);
   return (
     <div>
-      <h1>React cache update</h1>
+      <h1>React cache update test</h1>
       {!isLatestVersion && (
         <p>
           <a
