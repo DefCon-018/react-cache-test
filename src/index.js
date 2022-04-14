@@ -7,7 +7,7 @@ import { ClearCacheProvider, useClearCacheCtx } from "react-clear-cache";
 
 ReactDOM.render(
   <React.StrictMode>
-    <ClearCacheProvider duration={5000}>
+    <ClearCacheProvider auto>
       <App />
     </ClearCacheProvider>
   </React.StrictMode>,
