@@ -8,7 +8,7 @@ const App = () => {
   console.log("empty", emptyCacheStorage);
   return (
     <div>
-      <h1>React cache update test update</h1>
+      <h1>React cache update test update again</h1>
       {!isLatestVersion && (
         <p>
           <a
