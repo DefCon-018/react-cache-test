@@ -1,14 +1,12 @@
 import * as React from "react";
 
-import { useClearCache } from "react-clear-cache";
+import { ClearCacheProvider, useClearCacheCtx } from "react-clear-cache";
 
 const App = () => {
-  const { isLatestVersion, emptyCacheStorage } = useClearCache();
-  console.log("islatestversion", isLatestVersion);
-  console.log("empty", emptyCacheStorage);
+  const { isLatestVersion, emptyCacheStorage } = useClearCacheCtx();
   return (
     <div>
-      <h1>React cache update test update again</h1>
+      <h1>React clear cache</h1>
       {!isLatestVersion && (
         <p>
           <a
